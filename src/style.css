@@ -33,7 +33,7 @@ header {
 .sidebar {
   position: fixed;
   top: 60px;
-  width: 250px;
+  width: 15%;
   height: calc(100vh - 60px);
   /* background-color: #1b1e1f; */
   padding: 20px;
@@ -76,7 +76,7 @@ header {
   right: 0;
   position: fixed;
   top: 60px;
-  width: 250px;
+  width: 15%;
   height: calc(100vh - 60px);
   /* background-color: red; */
   padding: 20px;
@@ -96,8 +96,8 @@ header {
 }
 
 .content {
-  margin-left: 350px;
-  margin-right: 350px;
+  margin-left: 20%;
+  margin-right: 20%;
   padding: 20px;
 }
 
@@ -132,11 +132,13 @@ header {
 .fluxo-java {
   width: 100%;
 }
+img {
+  width: 100%;
+}
 .img-legend {
   display: flex;
   flex-direction: column;
 }
-
 .img-legend > img {
   max-width: 700px;
 }
@@ -156,4 +158,26 @@ footer > span {
 }
 footer > span > a {
   color: #007bff;
+}
+
+@media (max-width: 1300px) {
+  .sidebar,
+  .sidebar-right {
+    display: none;
+  }
+  .content {
+    margin: 0;
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  header {
+    height: 50px;
+  }
+  .icons > img {
+    width: 40px;
+  }
+  footer {
+    width: 100%;
+  }
 }
