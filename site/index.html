@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paradigmas de Programação</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      Paradigma Orientado a Objeto - JAVA
+      <div class="icons">
+        <img src="./assets/html-5.png" alt="logo html"/>
+        <img src="./assets/css-3.png" alt="logo css" />
+      </div>
+    </header>
+
+    <nav class="sidebar">
+      <ul>
+        <li><a href="#O que é?">Paradigma de Programação</a></li>
+        <ul>
+          <li><a href="#O que é?">O que é?</a></li>
+          <li><a href="#Contexto Histórico">Contexto Histórico</a></li>
+        </ul>
+        <li><a href="#Orientação a Objeto">Orientação a Objeto</a></li>
+          <ul>
+            <li><a href="#Abstração">Abstração</a></li>
+            <li><a href="#Encapsulamento">Encapsulamento</a></li>
+            <li><a href="#Herança">Herança</a></li>
+            <li><a href="#Polimorfismo">Polimorfismo</a></li>
+          </ul>
+        <li><a href="#Java">Java</a></li>
+          <ul>
+            <li><a href="#Origem">Origem</a></li>
+            <li><a href="#Ecossistema">Ecossistema</a></li>
+            <li><a href="#Aplicações">Aplicações</a></li>
+            <li><a href="#Comunidade">Comunidade</a></li>
+          </ul>
+        <li><a href="#Referências"></a></li>
+    </nav>
+
+    <nav class="sidebar-right">
+      <ul>
+        <li>Integrantes</li>
+        <ul>
+          <li>Carlos Eduardo Gomes</li>
+          <li>Gabriel Gomes</li>
+          <li>Gabriel Gonçalves</li>
+          <li>Kayo Mendes</li>
+          <li>Marcos</li>
+          <li>Yuri</li>
+        </ul>
+      </ul>
+    </nav>
+
+    <div class="content">
+      <section id="O que é?">
+        <h2>Paradigma de Programação</h2>
+        <h3>O que é paradigma de programação?</h2>
+        <p>
+          Segundo Tucker e Noonan (2009), paradigma de programação é o modelo
+          que define um padrão de resolução de problemas que está associado a
+          determinados programas e linguagens. Cada paradigma aborda uma maneira diferente
+          de resolver os problemas computacionais. Há linguagens criadas que suportam apenas um paradigma (SmallTalk, Prolog, Haskell) e outras que suportam múltiplos paradigmas (Java, C++, Python).
+        </p>
+      </section>
+
+      <section id="Contexto Histórico">
+        <h3>Contexto Histórico</h2>
+
+        <p>Na década de 1950, surgiram as primeiras linguagens conhecidas como "linguagens de alto nível" (abreviadas em inglês como HOLs). Diferentemente das linguagens de máquina e assembly, as HOLs não dependem de uma arquitetura de máquina específica, o que proporciona maior flexibilidade e portabilidade. Entre as linguagens que se destacaram nesse período, podemos citar o Fortran e o COBOL, que adotam o paradigma imperativo. Além disso, o ALGOL se destacou como uma linguagem pioneira no paradigma estrutural, enquanto o LISP se consolidou no paradigma funcional.</p>
+
+        <p>O conceito de orientação a objeto foi um processo evolutivo, no qual cada linguagem adotava um modelo de abstração de dados. A linguagem SIMULA 67 desenvolvida por dois noruegueses, Kristen Nygaard e Ole-Johan Dahl foi a primeira a fornecer suporte limitado para abstração de dados e introduzir o conceito de classe, embora não tenha se tornado popular por causa disso. Posteriomente, a linguagem SmallTalk, criada por Alan Key e sua equipe na XEROX PARC, foi a primeira a dar suporte completo a POO. A orientação a objetos é, sem dúvida, o paradigma de programação mais utilizado atualmente, sendo suportado por diversas linguagens.</p>
+
+        <div class="img-legend">
+          <img src="./assets/linha-do-tempo-linguagens.png"  alt="Linha cronológica da criação das linguagens de alto nível"/>
+          <span>TUCKER, A. B.; NOONAN, R. E. Linguagens de programação: princípios e paradigmas. 2. ed. São Paulo: AMGH, 2009,p. 7.</span>
+        </div>
+
+      </section>
+
+      <h2>Orientação a Objeto</h2>
+
+      <section id="Orientação a Objeto">
+        <p>A orientação a objetos é um modelo no qual um programa é composto por uma coleção de objetos que interagem entre si, trocando mensagens que modificam seus estados. Nesse contexto, a passagem de mensagens permite que os objetos de dados se tornem ativos, em vez de passivos. Isso significa que cada objeto possui atributos, que são variáveis representando características, e métodos, que representam comportamentos. Além disso, cada objeto é distinguido dos demais por seu endereço de memória exclusivo. O paradigma orientado a objeto se baseia em quatro conceitos fundamentais:</p>
+      </section>
+
+      <section id="Abstração">
+        <h3>Abstração</h3>
+        <p>Processo de identificar os atributos mais significativos de entidade e representá-lo em um modelo.</p>
+      </section>
+
+      <section id="Encapsulamento">
+        <h3>Encapsulamento</h3>
+        <p>Mecanismo que permite agrupar constantes logicamente relacionadas, variáveis e funções em uma nova entidade chamada classe. Em termos de POO, uma classe é uma definição de um tipo de dado abstrato. As variáveis de uma classe são chamadas de variáveis de instância, suas inicializações são feitas por construtores, e suas funções são chamadas de métodos. Cada instância de uma classe é um objeto.</p>
+
+        <p>A ideia central do encapsulamento é garantir que as variáveis de instância só possam ser acessadas através dos métodos implementados na mesma classe. Isso assegura que as modificações sejam feitas de forma controlada, mantendo a consistência e integridade dos dados e reduzindo a possibilidade de erros.</p>
+      </section>
+
+      <section id="Herança">
+        <h2>Herança</h2>
+        <p>Conteúdo do Subtópico 2.2.</p>
+      </section>
+      <section id="Polimorfismo">
+        <h2>Polimorfismo</h2>
+        <p>Conteúdo do Subtópico 1.1.</p>
+      </section>
+
+      <section id="Java">
+        <h2>Java</h2>
+        
+        <div class="banner">
+          <img class="banner-java" src="./assets/logo-java.webp" alt="logo do java">
+        </div>
+      </section>
+
+
+      <section id="Origem">
+        <h3>Origem</h3>
+        <p>Java foi criado em 1995 por James Gosling e sua equipe na Sun Microsystems, inicialmente como um projeto chamado "Green Project". O objetivo era desenvolver uma linguagem que pudesse rodar em dispositivos eletrônicos, como TVs e set-top boxes. No entanto, com a crescente popularidade da web, a equipe pivotou seu foco para criar uma linguagem de programação orientada a objetos que fosse portátil e versátil, permitindo que aplicações fossem executadas em diferentes plataformas sem a necessidade de recompilação.</p>
+      </section>
+
+      <section id="Ecossistema">
+        <h3>Ecossistema</h3>
+
+        <p>Java é uma linguagem de programação orientada a objetos que permite aos desenvolvedores modelar software de maneira mais intuitiva e modular.
+          A Java Virtual Machine (JVM) é o componente central que permite a execução de programas Java. Quando um programa é compilado, o código-fonte (.java) é transformado em bytecode (.class), que é um formato intermediário. A JVM interpreta esse bytecode, permitindo que ele seja executado em qualquer plataforma que tenha uma JVM instalada, independentemente do sistema operacional subjacente. Essa característica é a essência do slogan "escreva uma vez, execute em qualquer lugar".</p>
+
+        <p>Para executar um programa Java, é necessário ter a Java Runtime Environment (JRE) instalada. A JRE inclui a JVM, bibliotecas padrão e componentes essenciais para a execução de aplicações. O Java Development Kit (JDK) é um conjunto de ferramentas para desenvolvedores que inclui a JRE, compiladores, e uma série de utilitários que facilitam o desenvolvimento de aplicações Java. O JDK é fundamental para programadores que desejam criar software, pois oferece suporte para o desenvolvimento de aplicativos em diferentes plataformas.</p>
+      </section>
+
+      <img class="fluxo-java" src="./assets/fluxo-java.png" alt="fluxo de compilação de um programa java">
+      <section id="Aplicações">
+        <h3>Aplicações</h3>
+        <p>Java é amplamente utilizado em várias áreas devido à sua robustez e versatilidade:</p>
+
+        <p><b>Desenvolvimento Web</b>: Java é uma escolha popular para desenvolvimento de aplicações web, utilizando frameworks como Spring, que facilita a criação de aplicativos complexos e escaláveis. JavaServer Faces (JSF) e Hibernate também são ferramentas comuns que simplificam a construção de interfaces de usuário e o acesso a bancos de dados, respectivamente. <b>Tecnologias ultilizadas</b>:  Frameworks como Spring, JavaServer Faces, Hibernate, e servlets.</p>
+
+        <p><b>Desenvolvimento Mobile</b>: Java é a linguagem principal para o desenvolvimento de aplicativos Android. O Android SDK oferece um conjunto abrangente de ferramentas e APIs que permitem aos desenvolvedores criar aplicativos para uma vasta gama de dispositivos móveis. Além disso, a linguagem é usada em conjunto com Kotlin, que é uma linguagem mais moderna, mas ainda permite que os desenvolvedores utilizem bibliotecas Java existentes.<b> Tecnologias ultilizadas</b>: Android SDK, JavaFX para aplicações gráficas.</p>
+
+        <p><b>Sistemas Embarcados</b>: Java é utilizado em sistemas embarcados, como dispositivos de automação industrial e controle. O Java Micro Edition (Java ME) é uma versão específica da linguagem projetada para dispositivos com recursos limitados, como sensores e microcontroladores.<b> Tecnologias ultilizadas</b>: Java ME, Java Card (para dispositivos inteligentes e cartões).</p>
+      </section>
+
+      <section id="Comunidade">
+        <h3>Comunidade</h3>
+
+        <h4>Internacional</h4>
+
+        <p>Java possui uma comunidade ativa e vibrante no Brasil, com diversos eventos e grupos de usuários. Comunidades como o <a href="https://dev.java/community/jugs/">Java User Group (JUG)</a> reúnem entusiastas e profissionais para discutir inovações, melhores práticas e compartilhar conhecimentos. Eventos como o TDC (The Developer's Conference) e o Java Summit são realizados anualmente e atraem desenvolvedores de todo o país, oferecendo palestras, workshops e oportunidades de networking.</p>
+
+        <h4>Nacional</h4>
+
+        <p>O <a href="https://soujava.org.br/">SouJava</a> é um grupo de usuários, formado por desenvolvedores e evangelistas da tecnologia Java no Brasil, e tem como objetivo fortalecer, expandir e profissionalizar o uso de Java no país. O SouJava é um dos mais ativos e importantes grupos de usuários do mundo, e realiza diversas atividades no Brasil, e ajuda na organização do movimento Java mundial. O SouJava mantém reuniões presenciais, eventos e uma presença online, ajudando a comunidade Java brasileira a aplicar a tecnologia Java em projetos reais.</p>
+
+        Eventos em Brasília: <a href="https://www.meetup.com/pt-BR/soujava-brasilia/?eventOrigin=event_home_page">https://www.meetup.com/pt-BR/soujava-brasilia/?eventOrigin=event_home_page</a>
+      </section>
+
+ 
+      <section id="referências">
+        <h2>REFERÊNCIAS</h2>
+        <p>
+          TUCKER, A. B.; NOONAN, R. E.
+          <i>Linguagens de programação: princípios e paradigmas</i>. 2. ed. São
+          Paulo: AMGH, 2009
+        </p>
+        <p>
+          SEBESTA, Robert W. <i>Conceitos de linguagens de programação</i>. 9. ed. Porto Alegre: Bookman, 2011
+        </p>
+
+      </section>
+
+    </div>
+    <footer>
+      <span>
+        ícones criados por Freepik - Flaticon
+        <a
+          href="https://www.flaticon.com/br/icones-gratis/html-5"
+          title="html 5 ícones"
+          >Html 5</a
+        >
+        <a
+          href="https://www.flaticon.com/br/icones-gratis/css-3"
+          title="css 3 ícones"
+          >Css 3</a
+        >
+      </span>
+    </footer>
+  </body>
+</html>
